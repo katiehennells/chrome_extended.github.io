@@ -26,5 +26,16 @@ var config = {
 		'#b14aed',
 		'#c874d9'
 		],
-	customProps: {}
+	customProps: {
+		glasses: [
+			'images/glasses_aviators.png',
+			'images/glasses_monacle.png'
+		],
+		hats: [
+			'images/hat_tophat.png',
+			'images/hat_crown.png',
+			'images/hat_santa.png',
+			'images/hat_antlers.png'
+		]
+	}
 };
