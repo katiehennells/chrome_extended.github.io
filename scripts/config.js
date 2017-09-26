@@ -1,7 +1,8 @@
 var config = {
 	faces: {
 		//david: 'images/david_face.png',
-		bentley: 'images/Bentley.png'
+		bentley: 'images/Bentley.png',
+		nugget: 'images/chicken_nugget.png'
 	},
 	prefixes: [
 		'Loving',
