@@ -21,7 +21,14 @@ $(document).ready(function() {
 	// --- APPLY STATE TO DOM --- //
 
 	// Set the bg color
-	$('body').css('background-color', currentState.bgColor);
+	//$('body').css('background-color', currentState.bgColor);
+	bg1 = chooseBgColor(config.bgColors);
+	bg2 = chooseBgColor(config.bgColors);
+	console.log(bg1, bg2);
+	$('body').css('background', '-webkit-linear-gradient(141deg, ' + bg1 + ' 0%, ' + bg2 + ' 100%)');
+	$('body').css('background', '-o-linear-gradient(141deg, ' + bg1 + ' 0%, ' + bg2 + ' 100%)'); 
+	$('body').css('background', '-moz-linear-gradient(141deg, ' + bg1 + ' 0%, ' + bg2 + ' 100%)');
+	$('body').css('background', 'linear-gradient(141deg, ' + bg1 + ' 0%, ' + bg2 + ' 100%)');
 
 	// Populate the name
 	$('.name').html(currentState.name);
